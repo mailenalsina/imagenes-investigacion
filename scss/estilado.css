@@ -95,6 +95,10 @@ div.card div.card-body h5 {
   color: black;
 }
 
+div.card div.card-body h5 #iconoContacto {
+  margin-top: 40px;
+}
+
 div.card div.card-body p {
   background-color: rgba(12, 1, 165, 0.111);
   padding: 10px;
@@ -102,18 +106,6 @@ div.card div.card-body p {
   color: black;
 }
 
-/*Esta es la seccion Ambar
-
-div.parallaxAmbar {
-    background-image: url(../img/ambarcafe.jpg);
-    height: 500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 80px;
-}
-*/
 section div.historia h2.lista {
   margin-top: 60px;
   margin-bottom: 40px;
@@ -137,6 +129,15 @@ section div.hola {
 
 div.parallaxAmbar2 {
   background-image: url(../img/portada2.jpg);
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div.parallaxPublicaciones {
+  background-image: url(../img/portada3.jpg);
   height: 500px;
   background-attachment: fixed;
   background-position: center;
@@ -218,7 +219,7 @@ section.enlaceEspecialidades a {
 }
 
 div.parallaxIndex2 {
-  background-image: url(../img/portada3.jpg);
+  background-image: url(../img/portada4.jpg);
   height: 600px;
   background-attachment: fixed;
   background-position: center;
@@ -228,7 +229,7 @@ div.parallaxIndex2 {
 
 /* Esto es la Galeria*/
 div.parallaxGaleria1 {
-  background-image: url(../img/galeria14.jpg);
+  background-image: url(../img/exactas1.jpg);
   margin-top: 100px;
   height: 500px;
   background-attachment: fixed;
