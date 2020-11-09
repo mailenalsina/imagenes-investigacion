@@ -1,7 +1,7 @@
 @import '../scss/mixin';
 
-$colorMenu: rgb(0, 0, 0);
-$colorTitulo:  rgb(104, 64, 5);
+$colorTitulo: rgb(5, 14, 80);
+$colorPrincipal:  rgb(4, 15, 97);
 $fuentePrincipal: 'Poppins', sans-serif;
 $textoCentrado: center;
 $tamanoIcono: 30px;
@@ -14,7 +14,7 @@ html {
     width: auto;
 }
 body {
-    background-color:rgb(250, 246, 238);
+    background-color:rgb(255, 255, 255);
 }
 .contenedor {
     width: 90%;
@@ -51,30 +51,32 @@ header {
 
         }
         @keyframes mianimacion {
-            0% { color: rgba(230, 193, 137, 0.769)}
-            25% {color: rgba(205, 130, 17, 0.803)}
-            50% { color: rgba(142, 94, 21, 0.837)}
-            100% {color: rgb(104, 64, 5)}
+            0% { color: rgba(170, 173, 244, 0.769)}
+            25% {color: rgba(82, 85, 191, 0.803)}
+            50% { color: rgba(36, 34, 175, 0.837)}
+            100% {color: $colorTitulo;}
         }
 }
 
 /*Esta es la seccion Especialidades*/
 div.card {
-    box-shadow: 0 4px 20px 0 rgba(114, 111, 111, 0.5);
+    box-shadow: 0 4px 20px 0 rgba(35, 21, 191, 0.5);
     margin: 40px;
-    margin-top: 90px;
+    margin-top: 90px; 
 
     div.card-body {
         font-family: $fuentePrincipal;
         font-size: 20px;
         h5 {
             padding: 10px;
-            background-color:rgba(230, 179, 102, 0.282);
+            background-color:rgba(0, 23, 155, 0.068);
+            color: rgb(0, 0, 0);
         }
         p{
-            background-color:rgba(230, 193, 137, 0.255);
+            background-color:rgba(12, 1, 165, 0.111);
             padding: 10px;
             font-size: 17px;
+            color: rgb(0, 0, 0);
         }
     }
 }
@@ -83,7 +85,7 @@ div.card {
 // Hasta aca
 
 
-/*Esta es la seccion Ambar*/
+/*Esta es la seccion Ambar
 
 div.parallaxAmbar {
     background-image: url(../img/ambarcafe.jpg);
@@ -94,21 +96,35 @@ div.parallaxAmbar {
     background-size: cover;
     margin-top: 80px;
 }
+*/
 section {  
     div.historia {
-        p{
+        h2.lista{
+            margin-top: 60px;
+            margin-bottom: 40px;
+            color: rgb(12, 12, 159);
+            font-size: 30px;
+        }
+        ul{
+            li {
             @include tipografiaJustificada;
-            font-size: 25px; 
-            margin-top: 90px;
+            font-size: 20px; 
             margin-left: 120px;
             margin-right: 120px;
-            margin-bottom: 100px;
-            line-height: 2; 
+            margin-bottom: 20px;
+            line-height: 2;
+            }
         }
+
+       
+        
+    }
+    div.hola {
+        margin-bottom: 100px;
     }
 }    
 div.parallaxAmbar2 {
-    background-image: url(../img/ambargranos.jpg);
+    background-image: url(../img/portada2.jpg);
     height: 500px;
     background-attachment: fixed;
     background-position: center;
@@ -126,7 +142,7 @@ div.parallaxAmbar2 {
 
 section {
     div.imagenPortada {
-    background-image: url(../img/barilustrado.jpg);
+    background-image: url(../img/portada.jpg);
     width: 100%;
     position: relative;
     display: flex;
@@ -142,7 +158,7 @@ section {
     background-size: cover;
         div {
             h1.textoBorde {
-            font-size: 200px;
+            font-size: 50px;
             color:rgb(255, 255, 255);
             -webkit-text-stroke: 2px black;
             }
@@ -153,9 +169,12 @@ section {
 section.row {
     div{
         p.pdeIndex { @include tipografiaJustificada;
-        font-size: 30px;
+        font-size: 20px;
         margin-top: 100px;
+        margin-left: 20px;
         text-align: justify;
+        line-height: 40px;
+        
         }
         .iconoCafe {
         font-size: 40px;
@@ -165,8 +184,9 @@ section.row {
     }
     div {
         img.imagenCafe {
-        margin-top: 100px;
-        width: 500px;
+        margin-top: 120px;
+        margin-left: 35px;
+        width: 400px;
         object-fit: cover;
         overflow: hidden;
         } 
@@ -183,14 +203,14 @@ margin-bottom: 80px;
     }
     a { 
     font-family: $fuentePrincipal;
-    color: rgb(205, 129, 17);
+    color: $colorPrincipal;
     font-size: 30px;
     margin-top: 80px;
     }
 }
 
 div.parallaxIndex2 {
-background-image: url(../img/card3.jpg);
+background-image: url(../img/portada3.jpg);
 height: 600px;
 background-attachment: fixed;
 background-position: center;
@@ -249,7 +269,7 @@ div.parallaxGaleria {
 /* Esto es la seccion Contactanos */
 
 .parallaxContactanos1{
-    background-image: url(../img/contactanos1.jpg);
+    background-image: url(../img/portada.jpg);
     height: 500px;
     background-attachment: fixed;
     background-position: center;
@@ -276,7 +296,7 @@ div.parallaxGaleria {
                     font-size: 20px;
                     padding: 10px;  
                     margin-top: 20px;
-                    box-shadow: 2px 2px 5px rgb(205, 129, 17);
+                    box-shadow: 2px 2px 5px $colorPrincipal;
                     width: 50%;
                     display: block;
                     }
@@ -286,12 +306,12 @@ div.parallaxGaleria {
                     padding-left: 10px;    
                     font-size: 20px;
                     margin-top: 20px;
-                    box-shadow: 2px 2px 5px rgb(205, 129, 17);
+                    box-shadow: 2px 2px 5px $colorPrincipal;
                     width: 50%;
                     display: block;
                     }
                     input::placeholder {
-                    color: rgb(205, 129, 17);
+                    color: $colorPrincipal;
                     font-size: 20px;
                     font-family: $fuentePrincipal;                
                     }
@@ -301,8 +321,8 @@ div.parallaxGaleria {
                     font-size: 20px;
                     margin-top: 20px;
                     background-color: rgb(255, 255, 255);
-                    color: rgb(205, 129, 17);
-                    box-shadow: 2px 2px 5px rgb(205, 129, 17);
+                    color: $colorPrincipal;
+                    box-shadow: $colorPrincipal;
                     }
             }
         }
@@ -335,7 +355,7 @@ section.row {
    
 }
 footer {
-    background-color: rgb(242, 218, 177);
+    background-color: rgba(218, 218, 218, 0.474);
     padding-top: 50px;
     height: 200px;
 }
@@ -365,8 +385,8 @@ footer {
 
 .hojaSeparadora {
     font-size: 30px;
-    color:  rgb(205, 129, 17);
-    margin-top: 100px;
+    color: $colorPrincipal;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
 }
